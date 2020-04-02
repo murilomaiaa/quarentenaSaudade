@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  const nome = 'Murilo'
+  function gerarDias() {
+    return Math.floor(Math.random() * 300 + 300)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>
+      {gerarDias()} dias de quarentena e {nome} não aguenta mais ficar em casa
+    </h1>
+    <p>
+      Se voce eh como {nome} e não aguenta mais ficar em casa compartilhe com
+      seus amigos e mostre que está com saudades
+    </p>
+    </>
   );
 }
 
