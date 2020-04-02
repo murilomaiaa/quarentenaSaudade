@@ -12,12 +12,13 @@ export default class Text extends Component {
   }
 
   async componentDidMount() {
-    const { name } = this.props.match.params
+    const { name = 'eu'} = this.props.match.params
     this.setState({ name })
   }
 
   render() {
     const { name } = this.state
+
     return (
       <>
         <h1>

@@ -7,7 +7,8 @@ import Text from './components/Text'
 const Routes = () =>(
   <BrowserRouter>
     <Switch>
-      <Route path="/:name" component={Text} />
+      <Route path='/:name' component={Text} />
+      <Route path='*' component={Text} />
     </Switch>
   </BrowserRouter>
 )
