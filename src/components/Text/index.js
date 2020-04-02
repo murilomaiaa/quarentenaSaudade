@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import queryString from 'query-string'
 
 //import './styles.css'
 
@@ -12,7 +13,8 @@ export default class Text extends Component {
   }
 
   async componentDidMount() {
-    const { name = 'eu'} = this.props.match.params
+    const { name = 'eu'} = queryString.parse(this.props.location.search)
+    console.log(this.props.location)
     this.setState({ name })
   }
 
