@@ -1,9 +1,14 @@
 form{
-  width: 100px;
+  width: 30%;
+  min-width: 100px;
   display: grid;
   align-items: center;
 }
 
 form div {
   display: flex;
+}
+
+form div button {
+  width: 50px;
 }
