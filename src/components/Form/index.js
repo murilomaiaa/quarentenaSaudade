@@ -28,6 +28,7 @@ export default function Form() {
         </CopyToClipboard>
         {copied ? <span style={{color: 'red'}}>Copiado!</span> : null}
       </div>
+      <small>copia esse e manda no zip zop</small>
     </form>
   )
 }
