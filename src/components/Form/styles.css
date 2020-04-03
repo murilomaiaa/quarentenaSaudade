@@ -1,0 +1,10 @@
+form{
+  width: 100px;
+  display: grid;
+  align-items: center;
+
+}
+
+form div {
+  display: flex;
+}
