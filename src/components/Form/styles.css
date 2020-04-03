@@ -1,5 +1,5 @@
 form{
-  width: 30%;
+  width: 50%;
   min-width: 100px;
   display: grid;
   align-items: center;
@@ -7,8 +7,9 @@ form{
 
 form div {
   display: flex;
+  width: 100%;
 }
 
 form div button {
-  width: 50px;
+  margin-left: 5px;
 }
