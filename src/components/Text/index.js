@@ -13,9 +13,15 @@ export default class Text extends Component {
   }
 
   async componentDidMount() {
-    const { name = 'eu'} = queryString.parse(this.props.location.search)
-    console.log(this.props.location)
-    this.setState({ name })
+    const { name = ''} = queryString.parse(this.props.location.search)
+    const { nome = ''} = queryString.parse(this.props.location.search)
+    
+    if (name === nome && name === '')
+      this.setState({ name: 'eu' })
+    if (name !== '')
+      this.setState({ name })
+    if (nome !== '')
+      this.setState({ name: nome })
   }
 
   render() {
