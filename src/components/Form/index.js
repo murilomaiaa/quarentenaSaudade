@@ -24,11 +24,11 @@ export default function Form() {
 
         <CopyToClipboard text={generateLink()}
           onCopy={() => setCopied(true)}>
-          <button>Copiar</button>
+          <button disabled={ name === '' }>Copiar link</button>
         </CopyToClipboard>
         {copied ? <span style={{color: 'red'}}>Copiado!</span> : null}
       </div>
-      <small>copia esse e manda no zip zop</small>
+      <small>clica no botao e manda o link no zip zop</small>
     </form>
   )
 }
